@@ -9,7 +9,7 @@ def encontrar_menor(arr):
     
 def ordenacion_seleccion(arr):
     nuevo_array = []
-    copia_array = list(arr) # copy array before mutating
+    copia_array = list(arr) # copia del array antes de modificarla
     for i in range(len(copia_array)):
         menor = encontrar_menor(copia_array)
     nuevo_array.append(copia_array.pop(menor))
